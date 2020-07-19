@@ -110,8 +110,8 @@ by The Linux Foundation
 				  <a href="javascript:void(0)" rel="noopener">
 					 <img width=600px  src="notesImages/major_revision_control_system_hist_image8.png" alt="major_revision_control_system_hist_image8"></a>
 				</p>
-* Revision Control Systen (RCS)
-	* RCS is quite old, you won't generally find it today, unless there's some project that hasn't been updated for a very long time
+* **Revision Control Systen (RCS)**
+	* **RCS** is quite old, you won't generally find it today, unless there's some project that hasn't been updated for a very long time
 	* Old Unix utilities have built-in rules for RCS, such as make and emacs
 	* You typically have a sub-directory underneath, where your source files are, called RCS, that can change the control information, and RCS works in a serial fashion
 		* You lock a file, you make changes to it, and then you put it back in and unlock it
@@ -122,13 +122,13 @@ by The Linux Foundation
 				  <a href="javascript:void(0)" rel="noopener">
 					 <img width=600px  src="notesImages/rcs_overview_image9.png" alt="rcs_overview_image9"></a>
 				</p>
-* Concurrent Version System (CVS)
-	* The Concurrent Version Systems, CVS, was developed to deal with multiple users environment problem which was there in RCS
+* **Concurrent Version System (CVS)**
+	* The **Concurrent Version Systems**, **CVS**, was developed to deal with multiple users environment problem which was there in **RCS**
 	* It's more difficult to learn, it has more commands and it's more complex because of its very nature
-	* you have a centralized repository, it can be on a local machine, or it could be out on the Internet, and you never work directly on the files in the repository, you have your own working copy
+	* You have a centralized repository, it can be on a local machine, or it could be out on the Internet, and you never work directly on the files in the repository, you have your own working copy
 		* When you finish, you check changes back in, or commit them, as we say, back into the repository
 	* Any number of users can make changes to a given module at once, but that, of course, leads to the problem of how to resolve differences when people change the same parts of the code at the same time, and there are tools for doing it
-	* Various utilities, such as editors like Emacs, can be used tightly with CVS, and that helps
+	* Various **utilities**, such as **editors** like **Emacs**, can be used tightly with **CVS**, and that helps
 				<p align="center">
 				  <a href="javascript:void(0)" rel="noopener">
 					 <img width=600px  src="notesImages/cvs_part1of2_image10.png" alt="cvs_part1of2_image10"></a>
@@ -137,8 +137,8 @@ by The Linux Foundation
 				  <a href="javascript:void(0)" rel="noopener">
 					 <img width=600px  src="notesImages/cvs_part2of2_image11.png" alt="cvs_part2of2_image11"></a>
 				</p>
-* Subversion
-	* Subversion came around in 2000, as a successor to it, though, in many respects, it looks a lot like CVS and its interface, and it's pretty easy to convert from CVS to Subversion
+* **Subversion**
+	* **Subversion** came around in 2000, as a successor to **CVS**, though, in many respects, it looks a lot like CVS and its interface, and it's pretty easy to convert from CVS to Subversion
 	* One enhancement is that you can also version directories, copies, and renames, not just the specific files and their contents, and also permissions can be versioned
 	* You can set up a standalone Subversion server or you can make it as a service or a daemon
 	* You can have it run under Apache, there are a lot of opportunities
@@ -147,7 +147,7 @@ by The Linux Foundation
 				  <a href="javascript:void(0)" rel="noopener">
 					 <img width=600px  src="notesImages/subversion_image12.png" alt="subversion_image12"></a>
 				</p>
-* git
+* **git**
 	* Now, the Linux kernel development system had a lot of problems in its infancy about how to handle revision and version control
 	* For long time, Linus just worked with email when he accepted things or didn't accept things
 	* As the size of the project grew, it became important to have a coherent revision control system, and initially people used __BitKeeper__
@@ -170,5 +170,5 @@ by The Linux Foundation
 					 <img width=600px  src="notesImages/git_overview_part2of2_image14.png" alt="git_overview_part2of2_image14"></a>
 				</p>
 
-> RCS was created in 1982, CVS was released in 1990, Subversion was released in 2000, and Git was initially released in 2005
+> **RCS** was created in **1982**, **CVS** was released in **1990**, **Subversion** was released in **2000**, and **Git** was initially released in **2005**
 
