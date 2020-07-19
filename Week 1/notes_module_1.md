@@ -163,7 +163,7 @@ by The Linux Foundation
 	* So, the idea here is there is no longer any central authoritative repository like CVS
 				<p align="center">
 				  <a href="javascript:void(0)" rel="noopener">
-					 <img width=600px  src="notesImages/git_overview_image13.png" alt="git_overview_image13"></a>
+					 <img width=600px  src="notesImages/git_overview_part1of2_image13.png" alt="git_overview_part1of2_image13"></a>
 				</p>
 				<p align="center">
 				  <a href="javascript:void(0)" rel="noopener">
