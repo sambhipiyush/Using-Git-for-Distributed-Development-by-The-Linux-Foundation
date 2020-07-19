@@ -161,7 +161,6 @@ by The Linux Foundation
 		* So, for instance, if you have multiple copies of the same file in a repository, the binary blob that can change the file contents only has to be there once
 	* If you have a changeset that handles many files, it's far more efficient, like a simple file rename or move does not generate removing an old file and putting a new one; it's just a tiny little change in the database
 	* So, the idea here is there is no longer any central authoritative repository like CVS
-	* 
 				<p align="center">
 				  <a href="javascript:void(0)" rel="noopener">
 					 <img width=600px  src="notesImages/git_overview_image13.png" alt="git_overview_image13"></a>
