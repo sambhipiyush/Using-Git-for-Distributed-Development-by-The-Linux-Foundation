@@ -1,0 +1,189 @@
+WEBVTT
+
+1
+00:00:00.070 --> 00:00:05.111
+To get some grasp of what distributed development looks like, and
+
+2
+00:00:05.111 --> 00:00:11.383
+how git handles the repositories for that, let's look at git.kernel.org,
+
+3
+00:00:11.383 --> 00:00:15.731
+which contains a large number of git repositories for
+
+4
+00:00:15.731 --> 00:00:20.280
+projects that are somehow related to the Linux kernel.
+
+5
+00:00:21.630 --> 00:00:23.760
+And so we can see the name and description,
+
+6
+00:00:23.760 --> 00:00:28.550
+the owner, and various statistics for a large number of repositories here.
+
+7
+00:00:28.550 --> 00:00:32.590
+We could look at any one of them, but why don't we look at the main Linux kernel
+
+8
+00:00:32.590 --> 00:00:38.659
+repository, which would be easy to find because it's owned by Linus Torvalds.
+
+9
+00:00:40.410 --> 00:00:45.080
+And here's... right here, the kernel source tree, so let's look at that.
+
+10
+00:00:46.530 --> 00:00:51.070
+And you'll see, first, it lists the branches here. He just has a master and
+
+11
+00:00:51.070 --> 00:00:52.793
+a work-in-progress (WIP) branch.
+
+12
+00:00:52.793 --> 00:00:58.128
+Tags are various known states that are easily reverted to instead
+
+13
+00:00:58.128 --> 00:01:03.950
+of typing long hexidecimal numbers that are used for commits.
+
+14
+00:01:03.950 --> 00:01:09.050
+These are commit messages, and these are various places you can clone or
+
+15
+00:01:09.050 --> 00:01:13.804
+copy the repository from, using the git protocol in the first one, or
+
+16
+00:01:13.804 --> 00:01:16.680
+the HTTP protocol in the further ones.
+
+17
+00:01:16.680 --> 00:01:21.497
+If I go back to the top, if I look at stats here, see, these are the people
+
+18
+00:01:21.497 --> 00:01:26.730
+who have been contributing recently, and the number of commits.
+
+19
+00:01:26.730 --> 00:01:27.780
+This is by week.
+
+20
+00:01:27.780 --> 00:01:31.240
+If I want to get longer statistics, let me switch to quarter.
+
+21
+00:01:32.480 --> 00:01:36.950
+And you'll see there are many more people listed here.
+
+22
+00:01:36.950 --> 00:01:40.950
+You'll notice, by the way, Linus' name doesn't even come up in the top group in
+
+23
+00:01:40.950 --> 00:01:45.840
+here, that's because he mostly is taking commits from other people and
+
+24
+00:01:45.840 --> 00:01:48.290
+then feeding them into the master branch.
+
+25
+00:01:48.290 --> 00:01:51.150
+So, he doesn't make that many commits on his own.
+
+26
+00:01:52.710 --> 00:01:55.320
+And, if we go back to the summary here,
+
+27
+00:01:55.320 --> 00:01:59.829
+notice, if I want to look at the actual changes, I could look, say, at commit.
+
+28
+00:02:01.370 --> 00:02:07.083
+And, this will be a recent one that Linus committed,
+
+29
+00:02:07.083 --> 00:02:09.600
+okay, which contains a number of changes.
+
+30
+00:02:09.600 --> 00:02:11.840
+These are all the different files that were changed.
+
+31
+00:02:13.803 --> 00:02:20.890
+If I look at the dif here, I can see also particular patches that were done.
+
+32
+00:02:22.480 --> 00:02:27.460
+And you see the plus signs are lines which have been added, the minus signs are lines
+
+33
+00:02:27.460 --> 00:02:32.040
+which have been removed, so there's a one line change right here.
+
+34
+00:02:32.040 --> 00:02:35.490
+And then, there's some lines before and after, which are given for context.
+
+35
+00:02:40.450 --> 00:02:45.612
+And then, here's the various logs, so, for instance, if I want to look at any
+
+36
+00:02:45.612 --> 00:02:50.550
+particular one here, let's just pick one here from Jeff Laten.
+
+37
+00:02:50.550 --> 00:02:55.783
+You see, there's the author, and then, the committer is the one who actually put
+
+38
+00:02:55.783 --> 00:03:01.040
+it into the kernel, so this first person must have passed it to the next one.
+
+39
+00:03:01.040 --> 00:03:04.598
+Notice that all patches have a Signed-off-by field, or
+
+40
+00:03:04.598 --> 00:03:06.820
+one or more Signed-off-by fields.
+
+41
+00:03:06.820 --> 00:03:11.240
+These are people that are responsible for the changes.
+
+42
+00:03:11.240 --> 00:03:15.882
+And, for instance, if they stole lines of code from some other project, or
+
+43
+00:03:15.882 --> 00:03:20.607
+proprietary projects, and they did something that violated licenses,
+
+44
+00:03:20.607 --> 00:03:23.024
+we would know exactly who to blame.
+
+45
+00:03:23.024 --> 00:03:27.000
+So one, I recommend that you go look at this website and
+
+46
+00:03:27.000 --> 00:03:31.063
+examine some projects that you may find interesting and
+
+47
+00:03:31.063 --> 00:03:36.090
+get a sense of who is making changes and what the workflow looks like.

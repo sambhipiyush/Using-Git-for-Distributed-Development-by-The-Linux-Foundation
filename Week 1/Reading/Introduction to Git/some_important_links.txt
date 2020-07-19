@@ -1,0 +1,3 @@
+Kernel.org git repositories : https://git.kernel.org/
+
+The Linux Kernel Archives : https://www.kernel.org/
