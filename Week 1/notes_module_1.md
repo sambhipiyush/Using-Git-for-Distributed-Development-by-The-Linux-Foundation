@@ -153,10 +153,10 @@ by The Linux Foundation
 	* As the size of the project grew, it became important to have a coherent revision control system, and initially people used __BitKeeper__
 		* __BitKeeper__ was a commercial project, but it gave a license for the Linux kernel development
 	* There were disputes over what BitKeeper thought were violations of that license in 2005, and its use was withdrawn from the Linux kernel, and so git was developed as an alternative, and the original developer was Linus himself
-	* Git functions quite differently than the other revision control systems it doesn't really care about files, it works with three kinds of objects, 
-		1. blobs
-		1. trees
-		1. commits
+	* Git functions quite differently than the other revision control systems it doesn't really care about files, it **works** with **three** kinds of **objects**, 
+		1. **blobs**
+		1. **trees**
+		1. **commits**
 	* __binary blobs__, which contain file contents and the name of a file is only one of the bits of data that's controlled in what are called __indexes__
 		* So, for instance, if you have multiple copies of the same file in a repository, the binary blob that can change the file contents only has to be there once
 	* If you have a changeset that handles many files, it's far more efficient, like a simple file rename or move does not generate removing an old file and putting a new one; it's just a tiny little change in the database
